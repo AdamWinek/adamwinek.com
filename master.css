@@ -42,7 +42,8 @@ body{
   
 }
 
-a{
+
+.nav{
   font-size: 25px;
   width: 300px;
   text-align: center;
@@ -50,8 +51,6 @@ a{
   padding-bottom: 20px;
   text-decoration: none;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-
-
 }
 .compSci{
   text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
@@ -218,7 +217,33 @@ ul{
     width: 980px;
 }
 
+footer{
+  display: flex;
+  justify-content: center;
+  background-color: #1E96FC;
+  color: white;
+  font-size: 35px;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  display: none;
+}
+.display{
+  display: flex;
+}
+a:link{
+  color: white;}
+a:visited{
+  color: white;
 
+}
+.icon{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.display + footer {
+  padding-bottom: 60px;
+}
 
 #photos {
     /* Prevent vertical gaps */
@@ -238,6 +263,9 @@ ul{
     width: 100% !important;
     height: auto !important;
   }
+
+
+
 @media (max-width: 1200px) {
     #photos {
     -moz-column-count:    4;
@@ -335,7 +363,7 @@ h2{
     width: 95vw;
     padding-left: 5vw;
   }
-  a{
+  nav{
     width: 30%;
   }
   .titleNav{

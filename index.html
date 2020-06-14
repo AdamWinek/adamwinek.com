@@ -26,9 +26,9 @@
         </div>
         <div ></div>
         <div class="titleNav">
-            <a class="compSci" href="#comp">Comp Sci</a> 
-            <a class="involvement" href="#involvement">Involvement</a> 
-            <a class="about" href="#about">About Me</a>
+            <a class="compSci nav" href="#comp">Comp Sci</a> 
+            <a class="involvement nav" href="#involvement">Involvement</a> 
+            <a class="about nav" href="#about">About Me</a>
         </div>
 
 
@@ -192,7 +192,36 @@
     </div>
 
 
-
+    
 
 
 </body>
+<footer id="footer">
+    <a class="icon" href="mailto:winek@unc.edu"><i class="far fa-envelope"></i></a>
+    <a class="icon" href="https://github.com/AdamWinek"><i class="fab fa-github-square"></i></a>
+    <a class="icon" href="https://www.linkedin.com/in/adam-winek-30561b194/"><i class="fab fa-linkedin"></i></a>
+
+
+</footer>
+<script>
+    window.onscroll = function () { scrollFunction() };
+
+    var sticky = document.getElementById("footer").offsetTop;
+    var footer = document.getElementById("footer");
+
+    function scrollFunction() {
+      if (document.body.scrollTop > sticky || document.documentElement.scrollTop > sticky) {
+        footer.classList.add("display");
+
+      } else {
+       
+        footer.classList.remove("display");
+       
+      }
+
+
+
+    }
+
+
+  </script>
