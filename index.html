@@ -14,7 +14,34 @@
 
 <body>
 
-    <div class="intro">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
+        <a href="#home" class="active"><i class="fas fa-home"></i>
+        </a>
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+            <a  class="mobile-comp" href="#comp">CS</a>
+            <a class="mobile-involement" href="#involvement">Involvement</a>
+            <a class="mobile-about" href="#about">About Me</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <script>/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }</script>
+    <div class="intro" id="home">
         <div class="title">
             <div class="left">
                 <h2 class="normalWidth , hi">Hi</h2>
@@ -24,10 +51,10 @@
                 <h1 class="name"> Adam</h1>
             </div>
         </div>
-        <div ></div>
+        <div></div>
         <div class="titleNav">
-            <a class="compSci nav" href="#comp">Comp Sci</a> 
-            <a class="involvement nav" href="#involvement">Involvement</a> 
+            <a class="compSci nav" href="#comp">Comp Sci</a>
+            <a class="involvement nav" href="#involvement">Involvement</a>
             <a class="about nav" href="#about">About Me</a>
         </div>
 
@@ -44,7 +71,7 @@
         </div>
 
 
-        <div class="projects" >
+        <div class="projects">
             <div class="project">
                 <img src="zombieGame.jpg" height="140px" width="140px">
                 <div class="description">
@@ -192,7 +219,7 @@
     </div>
 
 
-    
+
 
 
 </body>
@@ -210,18 +237,18 @@
     var footer = document.getElementById("footer");
 
     function scrollFunction() {
-      if (document.body.scrollTop > sticky || document.documentElement.scrollTop > sticky) {
-        footer.classList.add("display");
+        if (document.body.scrollTop > sticky || document.documentElement.scrollTop > sticky) {
+            footer.classList.add("display");
 
-      } else {
-       
-        footer.classList.remove("display");
-       
-      }
+        } else {
+
+            footer.classList.remove("display");
+
+        }
 
 
 
     }
 
 
-  </script>
+</script>
