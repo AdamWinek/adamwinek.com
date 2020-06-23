@@ -141,6 +141,24 @@ h2{
     color:#27262C;
     margin: 0;
 }
+.tags{
+  display: flex;
+  margin-left: 40px;
+
+  
+}
+.tag{
+  padding-left: 40px;
+  background-color: #C3CAD5;
+  color: black;
+  margin-left: 3px;
+  margin-right: 3px;
+  max-width: 100px;
+  padding: 5px;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+}
 .project{
     padding: 20px;
     display: flex;
@@ -158,6 +176,9 @@ ul{
   width: 600px;
   font-size: 20px;
  
+}
+li{
+  padding-bottom: 5px;
 }
 
 .coursework{
@@ -363,6 +384,9 @@ h2{
 .activity{
   font-size: 25px !important;  
 }
+.activities{
+  list-style-type: none;
+}
 
 @media (max-width: 980px){
   body{
@@ -467,7 +491,17 @@ h2{
     text-decoration: none;
     list-style: none;
     margin-left: 0px;
+    margin-top: 5px;
     
+  }
+  .tags{
+    margin-left: 0px;
+    flex-wrap: wrap;
+    justify-content: center;
+ 
+  }
+  .tag{
+    margin-bottom: 5px;
   }
   .className{
     text-align: left;
