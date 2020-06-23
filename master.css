@@ -248,7 +248,7 @@ a:link{
   color: #F3F7EE;
 }
 a:visited{
-  color: #F3F7EE;
+  color: inherit;
 
 }
 .icon{
