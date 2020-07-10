@@ -179,7 +179,39 @@ ul{
 li{
   padding-bottom: 5px;
 }
-
+.clubs{
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+  0px 8px 13px rgba(0,0,0,0.1),
+  0px 18px 23px rgba(0,0,0,0.1);
+  color: #F3F7EE;
+  background-color:  #1E96FC;
+  width: 980px;
+}
+.clubDiv{
+  display: flex;
+  justify-content: space-evenly;
+}
+.clubHeader{
+  text-align: center;
+  width: 400px;
+  padding: 0;
+  background-color: #5CA4A9;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+  0px 8px 13px rgba(0,0,0,0.1),
+  0px 18px 23px rgba(0,0,0,0.1);
+  border-radius: 15px;
+  margin: 0;
+  color:#F3F7EE;
+}
+.clubCard{
+  width: 400px;
+  height: 600px;
+  border-radius: 15px;
+  margin: 20px;
+  border: 2px solid #ebebeb;
+  
+  
+}
 .coursework{
   text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
   0px 8px 13px rgba(0,0,0,0.1),
