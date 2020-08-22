@@ -145,7 +145,11 @@ h2 {
 }
 .titleLink {
 	text-decoration: none;
-	color: #27262c;
+	color: #27262c !important;
+}
+.titleLink:visited {
+	text-decoration: none;
+	color: #27262c !important;
 }
 .description {
 	width: 460px;
