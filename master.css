@@ -502,6 +502,7 @@ h2 {
 	.projectTitle {
 		text-align: center;
 		font-size: 30px;
+		max-width: 85vw;
 	}
 	h2 {
 		width: 100%;
